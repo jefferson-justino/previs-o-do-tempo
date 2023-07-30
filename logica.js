@@ -10,7 +10,7 @@ if(pesquisar== ''){
     alert('Por favor, informe a cidade corretamente!')
     return
 }
-    const uri = 'https://api.hgbrasil.com/weather?format=json-cors&key=34cd467b&city_name='+pesquisar+', '+estado
+    const uri = 'https://api.hgbrasil.com/weather?format=json-cors&key=d349cab8&city_name='+pesquisar+', '+estado
     const code = encodeURI(uri)
 
     const resp = await fetch(code)
