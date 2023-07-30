@@ -6,7 +6,7 @@ background-color: #ffffff;
 flex-wrap: wrap;
 display: flex;
 padding-top: 5%;
-background:  linear-gradient(90deg, rgba(89, 183, 238, 0.57)50%, rgba(50, 181, 255, 0.1482) 100%);
+background-color: rgba(89, 183, 238, 0.57);
 
 }
 
@@ -48,7 +48,7 @@ background:  linear-gradient(90deg, rgba(89, 183, 238, 0.57)50%, rgba(50, 181, 2
     flex-wrap: wrap;
     gap: 19px;
     padding-left: 10%;
-    padding-right: 5%;
+    padding-right: 10%;
 }
 #conteiner{
     padding-right: 35%;
