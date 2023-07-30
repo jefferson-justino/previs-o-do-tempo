@@ -6,7 +6,7 @@ let est = document.getElementById('est')
 botao.addEventListener('click', async function () {
  let pesquisar = pesquisa.value
  let estado = est.value
-if(pesquisar== ' '){
+if(pesquisar== ''){
     alert('Por favor, informe a cidade corretamente!')
     return
 }
