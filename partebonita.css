@@ -83,7 +83,7 @@ select{
 }
 @media (max-width: 525px){
     #conteiner{
-       padding-right: 1%;
+        padding-right: 1%;
         padding-left: 1%;
     }
   
