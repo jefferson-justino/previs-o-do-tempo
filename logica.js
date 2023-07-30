@@ -1,12 +1,16 @@
-
-
+let pesquisa =document.getElementById('pesquisa')
+let botao = document.getElementById('botao')
+let est = document.getElementById('est')
+ 
   
-
-async function temporal() {
-    
-
-
-    const uri = 'https://api.hgbrasil.com/weather?format=json-cors&key=34cd467b&city_name=joaquim gomes'
+botao.addEventListener('click', async function () {
+ let pesquisar = pesquisa.value
+ let estado = est.value
+if(pesquisar== ' '){
+    alert('Por favor, informe a cidade corretamente!')
+    return
+}
+    const uri = 'https://api.hgbrasil.com/weather?format=json-cors&key=34cd467b&city_name='+pesquisar+', '+estado
     const code = encodeURI(uri)
 
     const resp = await fetch(code)
@@ -31,8 +35,7 @@ async function temporal() {
     dias.push(d1,d2,d3,d4,d5,d6,d7)
     
 
-    let clima =['tempo limpo',
-     'chuvas esparsas',]
+    
 
     let temp = document.getElementById('temp').innerHTML = json.results.temp
     let cid = document.getElementById('cid').innerHTML = json.results.city
@@ -66,5 +69,4 @@ diascorridos.innerHTML+=`
 
     console.log(dias[3])
 
-}
-temporal()
+})

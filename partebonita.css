@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+}
+body{
+background-color: #ffffff;
+flex-wrap: wrap;
+display: flex;
+padding-top: 5%;
+background:  linear-gradient(90deg, rgba(89, 183, 238, 0.57)50%, rgba(50, 181, 255, 0.1482) 100%);
+
+}
+
+#cardPrincipal{
+    border: solid rgba(28, 153, 223, 0.57) 2.08%;
+    width: fit-content;
+    border-radius: 1em;
+   background-color: #dfdfdf;
+    box-shadow: 1px 1px 20px #00353e;
+   padding: 5%;
+  
+}
+#cardPrincipal h2{
+    float: right;
+}
+ #ocultar {
+    display: none;
+  -webkit-animation: animate-div 1s;
+}
+
+@-webkit-keyframes animate-div {
+    from { opacity: 0; margin-top: -10px;}
+    to { opacity: 1;margin-top: 0px;}
+}
+#cardPrincipal :hover ~  #ocultar{
+    display: block;
+  }  
+
+.cardDia{
+    border: solid rgba(28, 153, 223, 0.57) 2.08%;
+   width: fit-content;
+   border-radius: 1em;
+   padding: 1.1em;
+    box-shadow: 1px 1px 20px #00353e;
+    background-color: #dfdfdf;
+}
+#diascorridos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+#conteiner{
+    padding-right: 35%;
+    padding-left: 35%;
+    padding-bottom: 5%;
+}
+h1,h2,h3{
+    font-family:Arial, Helvetica, sans-serif;
+}
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pesquisa{
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+pre{
+    font-size: 1.2em;
+}
+select{
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: solid 1px;
+}
+#botao{
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: solid 1px;
+}
